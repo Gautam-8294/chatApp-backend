@@ -21,7 +21,7 @@ app.use(cors({
     // origin: ["https://chat-app-frontend-swart.vercel.app/"],
     // origin: ["https://vercel.live/link/chat-app-frontend-git-main-gautam-8294.vercel.app?via=deployment-domains-list-branch"],
     // origin: ["https://chat-app-frontend-gautam-8294.vercel.app/"],
-    origin: ["https://chat-app-frontend-swart.vercel.app","https://chat-app-frontend-git-main-gautam-8294.vercel.app/","https://vercel.com/gautam-8294/chat-app-frontend/ECoynJ3SER2zB5e5rLmM5oijojeb","https://thriving-daffodil-79b760.netlify.app/"],
+    origin: ["https://chat-app-frontend-swart.vercel.app","https://chat-app-frontend-git-main-gautam-8294.vercel.app","https://vercel.com/gautam-8294/chat-app-frontend/ECoynJ3SER2zB5e5rLmM5oijojeb","https://thriving-daffodil-79b760.netlify.app"],
     methods: ["GET","POST"],
     credentials: true
 }));
@@ -52,7 +52,7 @@ const io = new Server(server, {
         // origin: "https://chat-app-frontend-swart.vercel.app/",
         // origin: "https://vercel.live/link/chat-app-frontend-git-main-gautam-8294.vercel.app?via=deployment-domains-list-branch",
         // origin: "https://chat-app-frontend-gautam-8294.vercel.app/",
-        origin: ["https://chat-app-frontend-swart.vercel.app","https://chat-app-frontend-git-main-gautam-8294.vercel.app/","https://vercel.com/gautam-8294/chat-app-frontend/ECoynJ3SER2zB5e5rLmM5oijojeb","https://thriving-daffodil-79b760.netlify.app/"],
+        origin: ["https://chat-app-frontend-swart.vercel.app","https://chat-app-frontend-git-main-gautam-8294.vercel.app","https://vercel.com/gautam-8294/chat-app-frontend/ECoynJ3SER2zB5e5rLmM5oijojeb","https://thriving-daffodil-79b760.netlify.app"],
         methods: ["GET","POST"],
         credentials: true
     },
