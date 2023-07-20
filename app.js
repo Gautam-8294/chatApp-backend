@@ -41,7 +41,7 @@ app.use('/',router);
 
 
 const server = app.listen(port, () => {
-    console.log("server started at port 5000")
+    console.log(`server started at port ${port}`)
 })
 
 const io = new Server(server, {

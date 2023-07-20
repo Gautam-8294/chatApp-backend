@@ -1,5 +1,5 @@
 import express from 'express';
-import { getFriend, getHome, getLastMessage, getSignUp, getUser, postAddFriend, postCurrentMessage, postLogin, postLogout, postSignUp, verifyUser } from '../controller/action.js';
+import { getFriend, getHome, getLastMessage, getSignUp, getUser, postAddFriend, postCurrentMessage, postLogin, postLogout, postSignUp, verifyUser } from '../controllers/action.js';
 
 const router = express.Router();
 
