@@ -21,6 +21,7 @@ app.use(cors({
     // origin: ["https://chat-app-frontend-swart.vercel.app/"],
     // origin: ["https://vercel.live/link/chat-app-frontend-git-main-gautam-8294.vercel.app?via=deployment-domains-list-branch"],
     origin: ["https://chat-app-frontend-gautam-8294.vercel.app/"],
+    origin: ["https://chat-app-frontend-swart.vercel.app"],
     methods: ["GET","POST"],
     credentials: true
 }));
@@ -50,7 +51,8 @@ const io = new Server(server, {
         // origin: "http://localhost:3000",
         // origin: "https://chat-app-frontend-swart.vercel.app/",
         // origin: "https://vercel.live/link/chat-app-frontend-git-main-gautam-8294.vercel.app?via=deployment-domains-list-branch",
-        origin: "https://chat-app-frontend-gautam-8294.vercel.app/",
+        // origin: "https://chat-app-frontend-gautam-8294.vercel.app/",
+        origin: "https://chat-app-frontend-swart.vercel.app",
         methods: ["GET","POST"],
         credentials: true
     },
