@@ -213,6 +213,7 @@ const postLogin = async (req, res) => {
                         res.cookie('jwt_token', jwt_token,{
                             httpOnly:true,
                             maxAge:3600000*5,
+                            secure:true,
                             sameSite:'none',
                          });
 
