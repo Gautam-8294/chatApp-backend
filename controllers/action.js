@@ -214,8 +214,8 @@ const postLogin = async (req, res) => {
                             httpOnly:true,
                             maxAge:3600000*5,
                             secure:true,
-                            sameSite:'strict',
-                            domain:'https://thriving-daffodil-79b760.netlify.app/login'
+                            sameSite:'none',
+                            domain:'thriving-daffodil-79b760.netlify.app'
                          });
 
                         res.send({ "jwt_token": jwt_token });
