@@ -210,7 +210,12 @@ const postLogin = async (req, res) => {
                 const isMatch = await bcrypt.compare(password, userLogin.password);
                     if (isMatch) {
                         const jwt_token = jwt.sign({ email: userLogin.id }, JWT_SECRET, { expiresIn: "30d" });
-                        res.cookie('jwt_token', jwt_token);
+                        res.cookie('jwt_token', jwt_token,{
+                            httpOnly:true,
+                            maxAge:3600000*5,
+                            secure:true,
+                            sameSite:'none',
+                         });
 
                         res.send({ "jwt_token": jwt_token });
                     } else {
